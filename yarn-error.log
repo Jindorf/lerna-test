@@ -1,0 +1,45 @@
+Arguments: 
+  /snap/node/5825/bin/node /snap/node/5825/bin/yarn.js global dir
+
+PATH: 
+  /home/jannik/program/lerna-repo/packages/node_modules/.bin:/home/jannik/program/lerna-repo/node_modules/.bin:/home/jannik/program/node_modules/.bin:/home/jannik/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/jannik/program/goprojects/bin:/usr/local/go/bin:/home/jannik/program/goprojects/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, write
+      at writeSync (fs.js:736:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+      at writeOrBuffer (internal/streams/writable.js:358:12)
+      at SyncWriteStream.Writable.write (internal/streams/writable.js:303:10)
+      at ConsoleReporter._log (/snap/node/5825/lib/cli.js:96904:17)
+      at ConsoleReporter.log (/snap/node/5825/lib/cli.js:96892:10)
+      at dir (/snap/node/5825/lib/cli.js:36299:14)
+      at Object.<anonymous> (/snap/node/5825/lib/cli.js:25983:25)
+      at Generator.next (<anonymous>)
+      at step (/snap/node/5825/lib/cli.js:310:30)
+
+npm manifest: 
+  {
+    "name": "@aits/root",
+    "private": true,
+    "devDependencies": {
+      "lerna": "^4.0.0"
+    },
+    "workspaces": [
+      "packages/*"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

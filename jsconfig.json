@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "paths": {
+        "@mails/*": ["./packages/shared/src/*"]
+      }
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
